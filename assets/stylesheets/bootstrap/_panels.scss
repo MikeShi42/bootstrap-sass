@@ -9,7 +9,8 @@
   background-color: $panel-bg;
   border: 1px solid transparent;
   border-radius: $panel-border-radius;
-  @include box-shadow(0 1px 1px rgba(0,0,0,.05));
+  //Use double layered shadows, currently fixed to z-index of  1
+  @include box-shadow(0 1px 1.5px rgba(0,0,0,.18), 0 1px 5px rgba(0,0,0,.24));
 }
 
 // Panel contents
